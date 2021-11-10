@@ -19,6 +19,7 @@ public class RealOperator {
 		System.out.println(i + "<" + j +  "-->" + (i<j));
 		System.out.println(i + "<=" + j +  "-->" + (i<=j));
 		
+		scn.close();
 	}
 
 }

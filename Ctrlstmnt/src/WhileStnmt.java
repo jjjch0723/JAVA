@@ -4,7 +4,7 @@ public class WhileStnmt {
 
 	public static void main(String[] args) {
 			Scanner scn = new Scanner(System.in);
-			int i, end, hap;
+			int i, end, hap, strt;
 //----------------------------------------------------------------			
 			hap = 0;
 			
@@ -27,14 +27,22 @@ public class WhileStnmt {
 				i++;
 			}
 			System.out.println(hap);
+//-----------------------------------------------------------------------------------------------
+			
 			hap = 0;
-			int strt;
-			for (int i = strt; i <= end; i++) {
+
+			System.out.println("시작숫자를 입력하세요! :");
+			strt = scn.nextInt();
+			System.out.println("종료숫자를 입력하세요! :");
+			end = scn.nextInt();
+			for (i = strt; i <= end; i++) {
 				if(i%7==0)
 					continue; //조건 생략, i가 7 의 배수면 건너뛰어서 8부터 시작
 				hap += i;	
 			}
 			System.out.println(strt + "부터" +end+ "까지의 수 중에 7의 배수의 합 = " + hap);
+			
+			
 //------------------------------------------------------------------------------------------------
 			
 			hap = 0;
